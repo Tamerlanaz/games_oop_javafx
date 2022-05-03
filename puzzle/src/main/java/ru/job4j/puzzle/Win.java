@@ -6,6 +6,7 @@ public class Win {
         for (int index = 0; index < board.length; index++) {
             if (board[index][index] == 1 && (horizontal(board, index) || vertical(board, index))) {
                 rsl = true;
+                break;
             }
         }
         return rsl;
